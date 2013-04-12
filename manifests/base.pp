@@ -16,7 +16,8 @@ $packages = [
     "php5-cgi",
     "php5-cli",
     "nginx",
-    "mysql"
+    "mysql-server",
+    "php5-mysql"
 ]
 
 package { $packages: ensure => latest, }
