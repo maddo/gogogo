@@ -1,7 +1,9 @@
 stage { init: before => Stage['main'], }
 
 class dependencies {
+
     notify {"whats up homie":}
+
     class { apt::update: }
 
     # this installs php5 with apache :(
@@ -15,9 +17,14 @@ class {'dependencies': stage => init}
 $packages = [
     "php5-cgi",
     "php5-cli",
-    "nginx",
-    "mysql-server",
-    "php5-mysql"
+    # "nginx",
+    # "mysql-server",
+    # "php5-mysql"
 ]
 
 package { $packages: ensure => latest, }
+
+# class { 'php': }
+class { 'nginx': }
+class { 'mysql': }
+class { 'mysql::php': }

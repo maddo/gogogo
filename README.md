@@ -38,3 +38,7 @@ Other boxes: https://github.com/mitchellh/vagrant/wiki/Available-Vagrant-Boxes
 * http://forge.puppetlabs.com/example42/puppi
 
 * http://forge.puppetlabs.com/puppetlabs/stdlib
+
+* https://forge.puppetlabs.com/puppetlabs/mysql
+
+* https://forge.puppetlabs.com/puppetlabs/nginx
